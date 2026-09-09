@@ -7,11 +7,7 @@ export default function Conteudo() {
   let numeroComum = 0;
 
   //Estado do React
-<<<<<<< HEAD
   
-=======
-
->>>>>>> 8ab1e0f2411f0dcb9b238c9cda3ac440492ecd2a
   const [mostraSection, setMostraSection] = useState(true);
 
   function aumentaVariavelComun() {
@@ -24,13 +20,8 @@ export default function Conteudo() {
 
   function verSection() {
     //O React altera o estado e renderiza novamente a página/componente.
-<<<<<<< HEAD
     
     
-=======
-
-
->>>>>>> 8ab1e0f2411f0dcb9b238c9cda3ac440492ecd2a
     setMostraSection(!mostraSection);
   }
   
@@ -38,11 +29,7 @@ export default function Conteudo() {
     <main>
       <section>
         <LigaDesliga />
-<<<<<<< HEAD
         <VerDataNasc/>
-=======
-        <VerDataNasc />
->>>>>>> 8ab1e0f2411f0dcb9b238c9cda3ac440492ecd2a
       </section>
       <section>
         <h2>Conteúdo</h2>
@@ -70,22 +57,14 @@ export default function Conteudo() {
           <figcaption>Imagem de exemplo 400x400px</figcaption>
         </figure>
       </section>
-<<<<<<< HEAD
       <section style={{"display": mostraSection ? "block" : "none"}}>
-=======
-      <section style={{ "display": mostraSection ? "block" : "none" }}>
->>>>>>> 8ab1e0f2411f0dcb9b238c9cda3ac440492ecd2a
         <h2>Imagem com referência interna estática</h2>
         <figure>
           <img src="/image/lampada.png" alt="Lampada de Desenho." />
           <figcaption>Imagem de exemplo estática - Lâmpada</figcaption>
         </figure>
       </section>
-<<<<<<< HEAD
         <button onClick={verSection}>{mostraSection ? "Ocultar" : "Mostrar"}</button>
-=======
-      <button onClick={verSection}>{mostraSection ? "Ocultar" : "Mostrar"}</button>
->>>>>>> 8ab1e0f2411f0dcb9b238c9cda3ac440492ecd2a
     </main>
   );
 }

@@ -15,17 +15,12 @@ export default function VerDataNasc() {
     function formatarData(data: string) {
         // Cria o objeto de data corrigindo o fuso horário (trocando - por /)
         const dataObjeto = new Date(data.replace(/-/g, '/'));
-<<<<<<< HEAD
             setDataFormatada(new Intl.DateTimeFormat('pt-BR').format(dataObjeto));
-=======
-        setDataFormatada(new Intl.DateTimeFormat('pt-BR').format(dataObjeto));
->>>>>>> 8ab1e0f2411f0dcb9b238c9cda3ac440492ecd2a
         // Formata para o padrão brasileiro (pt-BR)
         return new Intl.DateTimeFormat('pt-BR').format(dataObjeto);
     }
 
 
-<<<<<<< HEAD
   return (
     <div>
         <h2>Ver Data de Nascimento</h2>
@@ -35,13 +30,3 @@ export default function VerDataNasc() {
   )
 }
 
-=======
-    return (
-        <div>
-            <h2>Ver Data de Nascimento</h2>
-            <input type="date" value={dataNascimento} onChange={(e) => { setDataNascimento(e.target.value); formatarData(e.target.value); }} />
-            <p>Data de Nascimento: {dataFormatada}</p>
-        </div>
-    )
-}
->>>>>>> 8ab1e0f2411f0dcb9b238c9cda3ac440492ecd2a
