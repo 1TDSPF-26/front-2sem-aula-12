@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
 import Cabecalho from "./components/Cabacalho/Cabecalho";
-import Conteudo from "./components/Conteudo/Conteudo";
 import Rodape from "./components/Rodape/Rodape"
+
 
 
 
